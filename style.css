@@ -3,18 +3,19 @@ body {
   background-color: #313131;
 }
 
-.container {
-  width: auto;
-  margin: 0 auto;
-}
-
-.logo {
-  float: left;
-  margin: 15px;
+.name {
+  align-content: center;
+  text-align: center;
   padding: 5px;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-size: 2em;
   color: #ed5107;
+}
+
+@media only screen and (min-width: 600px) {
+  .menu {
+    display: none;
+  }
 }
 
 ul {
@@ -27,11 +28,14 @@ li {
   float: right;
 }
 
+a {
+  text-decoration: none;
+}
+
 li a {
   color: #ddf796;
   padding: 0.7em;
   margin: 1em;
-  text-decoration: none;
   border-radius: 5px;
 }
 
@@ -55,4 +59,68 @@ li a:hover {
   align-content: center;
   margin: 15em auto;
   overflow: auto;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  align-content: center;
+  margin: 2em auto;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #313131;
+}
+
+.description p {
+  align-content: center;
+  text-align: center;
+  padding: 5px;
+  color: #f0f0f0;
+}
+
+.contact,
+a {
+  align-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.fab {
+  font-size: 48px;
+  color: #f0f0f0;
+}
+
+.small {
+  font-size: 14px;
+}
+
+p.small {
+  margin: 0px;
+  padding-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    display: none;
+  }
+  .menu p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+  }
+
+  span a,
+  p a {
+    color: #ddf796;
+  }
+
+  p.center {
+    margin: 10px;
+  }
 }
